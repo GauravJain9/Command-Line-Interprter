@@ -1,22 +1,16 @@
 # Command-Line-Interprter
 ABSTRACT
-	The kernel is the central module of an operating system (OS). It is the part of the operating system that loads first, and it remains in main memory. Typically, the kernel is responsible for memory management, process and task management, and disk management. 
-
-
-The kernel connects the system hardware to the application software.
+The kernel is the central module of an operating system (OS). It is the part of the operating system that loads first, and it remains in main memory. Typically, the kernel is responsible for memory management, process and task management, and disk management. 
 
 A shell is software that provides an interface for an operating system's users to provide access to the kernel's services.
 On Unix-based or Linux-based operating systems, a shell can be invoked through the shell command in the command line interface (CLI), allowing users to direct operations through computer commands, text or script.
-.
 
- 
 Shell is broadly classified into two categories –
 	Command Line Shell
 	Graphical shell
 
 
 Command Line Shell
-
 A shell script is small computer program that is designed to be run or executed by the Unix shell, which is a command-line interpreter. A shell script is basically a set of commands that the shell in a Unix-based operating system follows. Like actual programs, the commands in the shell script can contain parameters and subcommands that tell the shell what to do. The shell script is usually contained in a simple text file.
 
 There are several shells are available for Linux systems like –
@@ -33,28 +27,6 @@ There are many reasons to write shell scripts –
 	System admins use shell scripting for routine backups
 	System monitoring
 	Adding new functionality to the shell etc.
-
-Advantages of shell scripts
-
-1.	To automate the frequently performed operations
-2.	To run sequence of commands as a single command
-3.	Easy to use
-4.	Portable (It can be executed in any Unix-like operating systems without any modifications)
-
-
-Disadvantages of shell scripts
-
-•	Prone to costly errors, a single mistake can change the command which might be harmful.
-•	Slow execution speed.
-•	Design flaws within the language syntax or implementation.
-•	Not well suited for large and complex task.
-•	Provide minimal data structure unlike other scripting languages.
-
-
-
-
-
-
 
 INTRODUCTION
 After a command is entered, the following things are done:
