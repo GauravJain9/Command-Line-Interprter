@@ -66,3 +66,7 @@ After a command is entered, the following things are done:
 6.	Executing system commands and libraries by forking a child and calling execvp.
 7.	Printing current directory name and asking for next input.
 For keeping history of commands, recovering history using arrow keys and handling autocomplete using the tab key, we will be using the readline library provided by GNU.
+
+Project Done by:
+Shrey Upadhyay(17BCE1313)
+Gaurav Sethia(17BCE1153)
