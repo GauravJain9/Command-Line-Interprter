@@ -1,0 +1,39 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ReadFile {
+
+    public static void main()throws IOException {
+        InputStreamReader read=new InputStreamReader(System.in);
+        BufferedReader br=new BufferedReader(read);
+        String p;
+        System.out.println("Enter file path:");
+        p=br.readLine();
+        Path path = Paths.get(p);
+      // Using Lines
+        try(Stream<String> stream = Files.lines(path)){
+            stream.forEach(System.out::println);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        /*
+        // Using newBufferedReader
+        try(BufferedReader br = Files.newBufferedReader(path)){
+            Stream<String> stream = br.lines();
+            stream.forEach(System.out::println);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        */
+    }
+}
