@@ -1,0 +1,48 @@
+import java.io.File;
+ 
+public class DiskSpaceDetail {
+ 
+    public static void main() {
+         System.out.println("Local Disk D");
+        File diskPartition = new File("C:");
+ 
+        long totalCapacity = diskPartition.getTotalSpace(); 
+ 
+        long freePartitionSpace = diskPartition.getFreeSpace(); 
+        long usablePatitionSpace = diskPartition.getUsableSpace(); 
+ 
+        System.out.println("**** Sizes in Mega Bytes ****\n");
+ 
+        System.out.println("Total C partition size : " + totalCapacity / (1024*1024) + " MB");
+        System.out.println("Usable Space : " + usablePatitionSpace / (1024 *1024) + " MB");
+        System.out.println("Free Space : " + freePartitionSpace / (1024 *1024) + " MB");
+ 
+        System.out.println("\n**** Sizes in Giga Bytes ****\n");
+ 
+        System.out.println("Total C partition size : " + totalCapacity / (1024*1024*1024) + " GB");
+        System.out.println("Usable Space : " + usablePatitionSpace / (1024 *1024*1024) + " GB");
+        System.out.println("Free Space : " + freePartitionSpace / (1024 *1024*1024) + " GB");
+        
+        
+        System.out.println("Local Disk D");
+        
+        File diskPartition2 = new File("D:");
+ 
+        long totalCapacity2 = diskPartition2.getTotalSpace(); 
+ 
+        long freePartitionSpace2 = diskPartition2.getFreeSpace(); 
+        long usablePatitionSpace2 = diskPartition2.getUsableSpace(); 
+ 
+        System.out.println("**** Sizes in Mega Bytes ****\n");
+ 
+        System.out.println("Total C partition size : " + totalCapacity2 / (1024*1024) + " MB");
+        System.out.println("Usable Space : " + usablePatitionSpace2 / (1024 *1024) + " MB");
+        System.out.println("Free Space : " + freePartitionSpace2 / (1024 *1024) + " MB");
+ 
+        System.out.println("\n**** Sizes in Giga Bytes ****\n");
+ 
+        System.out.println("Total C partition size : " + totalCapacity2 / (1024*1024*1024) + " GB");
+        System.out.println("Usable Space : " + usablePatitionSpace2 / (1024 *1024*1024) + " GB");
+        System.out.println("Free Space : " + freePartitionSpace2 / (1024 *1024*1024) + " GB");
+    }
+}
