@@ -40,5 +40,5 @@ After a command is entered, the following things are done:
 For keeping history of commands, recovering history using arrow keys and handling autocomplete using the tab key, we will be using the readline library provided by GNU.
 
 Project Done by:
-Shrey Upadhyay(17BCE1313)
-Gaurav Sethia(17BCE1153)
+Shrey Upadhyay
+Gaurav Sethia
